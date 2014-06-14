@@ -5,10 +5,16 @@ Suite Teardown    Close Browser
 
 *** Testcases ***
 Search from google
-	Open Browser    http://www.google.co.th   #
+	ค้นหา robot
+	เจอคำว่า robot
 
+
+
+
+*** Keywords ***
+ค้นหา robot
+	Open Browser    http://www.google.co.th   #
 	Input Text      gbqfq    Robot
 	Click Button    gbqfb
-
+เจอคำว่า robot
 	Wait Until Page Contains    Robot
-*** Keywords ***
